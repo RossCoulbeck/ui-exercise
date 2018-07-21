@@ -1,0 +1,17 @@
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainContent {
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+}
+
+/* Media Queries */
+/* Media Queries End */
+/*# sourceMappingURL=test.css.map */
