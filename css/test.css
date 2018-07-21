@@ -3,8 +3,12 @@
           box-sizing: border-box;
 }
 
-html, body, .mainContainer {
+html, body {
   height: 100%;
+}
+
+.mainContainer {
+  height: calc(100% - 59px);
 }
 
 h1, h2 {
@@ -47,11 +51,18 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .mainContent {
   width: 100%;
   padding: 50px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.mainContent.sideOpen {
+  width: 70%;
 }
 
 .postGrid {
@@ -82,14 +93,26 @@ nav a:hover {
 }
 
 aside {
-  display: none;
-  width: 30%;
+  visibility: hidden;
+  width: 0;
   padding: 40px;
   background-color: #ccc;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
 }
 
 aside h2 {
+  display: none;
   font-size: 20px;
+}
+
+aside.open {
+  visibility: initial;
+  width: 30%;
+}
+
+aside.open h2 {
+  display: block;
 }
 
 /* Media Queries */
