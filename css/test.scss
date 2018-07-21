@@ -1,8 +1,54 @@
+// Variables
+$headerColor: #6C97FF;
+$navLinkColor: #fff;
+$navLinkColorHover: #FF2C11;
+$headingFontColor: #000;
+$bodyFontColor: #5E5E5E;
+$sidebarColor: #ccc;
+
+$headingFont: 'Montserrat', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
+
+//General
+*, html, body {
+    box-sizing: border-box;
+}
+
+html, body, .mainContainer {
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: $headingFont;
+    color: $headingFontColor;
+}
+
+body {
+    font-family: $bodyFont;
+    color: $bodyFontColor;
+    font-size: 14px;
+}
+
 // Header
+header {
+    background-color: $headerColor;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
+nav {
+    padding: 20px;
 
+    a {
+        text-decoration: none;
+        color: $navLinkColor;
+        margin-right: 10px;
+    }
 
-
+    a:hover {
+        color: $navLinkColorHover;
+    }
+}
 
 
 // Body
@@ -12,10 +58,39 @@
 
 .mainContent {
     width: 70%;
+    padding: 50px;
+}
+
+.postGrid {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.postGrid__post {
+    width: 32%;
+    margin-bottom: 20px;
+
+    img {
+        margin-bottom: 10px;
+    }
+}
+
+.postGrid__title {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 aside {
     width: 30%;
+    padding: 40px;
+    background-color: $sidebarColor;
+
+    h2 {
+        font-size: 20px;
+    }
 }
 
 

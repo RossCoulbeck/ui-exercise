@@ -1,3 +1,48 @@
+*, html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, .mainContainer {
+  height: 100%;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #5E5E5E;
+  font-size: 14px;
+}
+
+header {
+  background-color: #6C97FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #FF2C11;
+}
+
 .mainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,10 +51,44 @@
 
 .mainContent {
   width: 70%;
+  padding: 50px;
+}
+
+.postGrid {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.postGrid__post {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.postGrid__post img {
+  margin-bottom: 10px;
+}
+
+.postGrid__title {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 aside {
   width: 30%;
+  padding: 40px;
+  background-color: #ccc;
+}
+
+aside h2 {
+  font-size: 20px;
 }
 
 /* Media Queries */
