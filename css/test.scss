@@ -57,7 +57,7 @@ nav {
 }
 
 .mainContent {
-    width: 70%;
+    width: 100%;
     padding: 50px;
 }
 
@@ -84,6 +84,7 @@ nav {
 }
 
 aside {
+    display: none;
     width: 30%;
     padding: 40px;
     background-color: $sidebarColor;
@@ -101,16 +102,29 @@ aside {
 
 
 /* Media Queries */
-@media only screen and (min-width: 768px) and (max-width: 959px) /* iPad Portrait */
-{
-
+@media only screen and (max-width: 1023px) {
+    .postGrid {
+        width: 100%;
+    }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) /* Mobile Landscape */
+@media only screen and (max-width: 767px) /* Mobile Landscape */
 {
+    .postGrid__post {
+        width: 49%;
+    }
+    
+    .mainContent {
+        padding: 20px;
+    }
 
+    aside {
+        padding: 10px;
+    }
 }
 @media only screen and (max-width: 479px) /* Mobile Portrait */
 {
-
+    .postGrid__post {
+        width: 100%;
+    }
 }
 /* Media Queries End */

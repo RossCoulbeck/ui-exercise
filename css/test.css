@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 .mainContent {
-  width: 70%;
+  width: 100%;
   padding: 50px;
 }
 
@@ -82,6 +82,7 @@ nav a:hover {
 }
 
 aside {
+  display: none;
   width: 30%;
   padding: 40px;
   background-color: #ccc;
@@ -92,5 +93,29 @@ aside h2 {
 }
 
 /* Media Queries */
+@media only screen and (max-width: 1023px) {
+  .postGrid {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .postGrid__post {
+    width: 49%;
+  }
+  .mainContent {
+    padding: 20px;
+  }
+  aside {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .postGrid__post {
+    width: 100%;
+  }
+}
+
 /* Media Queries End */
 /*# sourceMappingURL=test.css.map */
