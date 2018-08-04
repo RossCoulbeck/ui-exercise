@@ -18,64 +18,67 @@
 		<script src="js/test.js"></script>
 	</head>
 	<body>
-		<header>
+		<header role="banner"> <!-- Role added for older browsers -->
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="/about">About</a>
-				<a href="/blog">Blog</a>
-				<a href="javascript:void(0)" class="sidebarToggle">Sidebar</a>
+				<a href="index.html" tabindex="0">Home</a>
+				<a href="/about" tabindex="0">About</a>
+				<a href="/blog" tabindex="0">Blog</a>
+				<a href="javascript:void(0)" class="sidebarToggle" tabindex="0">Sidebar</a>
 			</nav>
 		</header>
-		<section class="mainContainer">
+		<main class="mainContainer">
 			<div class="mainContent">
+
+				<h1 class="mainContent__title">Articles</h1>
+
 				<div class="postGrid">
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image1.png" alt="coloourful dress">
 
 						<h2 class="postGrid__title">Vlisco</h2>
 
 						<p class="postGrid__desc">E-commerce with a colourful story</p>
-					</div>
+					</article>
 
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image2.png" alt="airport">
 
 						<h2 class="postGrid__title">Copenhagen Airports</h2>
 
 						<p class="postGrid__desc">Knowing Your Customer in the Digital Age</p>
-					</div>
+					</article>
 
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image3.png" alt="tv and devices">
 
 						<h2 class="postGrid__title">TV4 Play</h2>
 
 						<p class="postGrid__desc">From TV channel to leading content provider</p>
-					</div>
+					</article>
 
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image4.png" alt="cars on screen">
 
 						<h2 class="postGrid__title">Audi City</h2>
 
 						<p class="postGrid__desc">How to purchase a real car in a virtual store</p>
-					</div>
+					</article>
 
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image5.png" alt="cows">
 
 						<h2 class="postGrid__title">Arla Foods</h2>
 
 						<p class="postGrid__desc">Dairy production in Big Data</p>
-					</div>
+					</article>
 
-					<div class="postGrid__post">
+					<article class="postGrid__post" tabindex="0">
 						<img src="images/image6.png" alt="rocks in water">
 
 						<h2 class="postGrid__title">Xylem</h2>
 
 						<p class="postGrid__desc">Helping the world's largest water technology provider solve the global water crisis through Business Transformation.</p>
-					</div>
+					</article>
 				</div>
 			</div>
 
@@ -83,6 +86,6 @@
 				<h2>Sidebar</h2>
 			</aside>
 			
-		</section>
+		</main>
 	</body>
 </html>
